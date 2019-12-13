@@ -11,7 +11,7 @@ public class finerectangle {
             dividedSquare = (w*i) /h ;
             answer += 2* dividedSquare;
         }
-    return answer;
+        return answer;
     }
 
     public static void main(String[] args) {
