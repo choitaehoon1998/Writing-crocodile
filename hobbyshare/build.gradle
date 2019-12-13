@@ -1,0 +1,26 @@
+plugins {
+	id 'java'
+	id 'eclipse'
+	id 'org.springframework.boot' version '2.2.2.RELEASE'
+	id 'io.spring.dependency-management' version '1.0.6.RELEASE'
+}
+
+group = 'com.hobbyshare'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = 1.8
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	compile group: 'org.springframework', name: 'spring-jdbc', version: '5.1.9.RELEASE'
+	compile group: 'org.mybatis', name: 'mybatis-spring', version: '2.0.2'
+	compile group: 'org.mybatis', name: 'mybatis', version: '3.5.2'
+	implementation group: 'org.apache.tomcat.embed', name: 'tomcat-embed-jasper', version: '9.0.13'
+	
+	implementation('org.springframework.boot:spring-boot-starter-web')
+	runtimeOnly('org.springframework.boot:spring-boot-devtools')
+	compileOnly('org.projectlombok:lombok')
+	testImplementation('org.springframework.boot:spring-boot-starter-test')
+}

@@ -4,13 +4,9 @@
 package Algorithm;
 
 public class NextBigNum {
-    public int solution(int n) {
-       int answer =0;
-       String a = Integer.toBinaryString(n);
-      a.
+    public void solution(int n) {
        
        
-       return answer;
     }
 
     public static void main(String[] args) {
